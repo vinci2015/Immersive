@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.njrobot.huangyouqiang.immersive.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="?actionBarSize"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:text="沉浸式状态栏" />
+    <Button
+        android:id="@+id/btn_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="drawer layout"
+        android:onClick="drawer"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" make a picture as a background"
+        android:layout_marginTop="20dp"
+        android:onClick="picture"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_drawer"/>
+</RelativeLayout>
